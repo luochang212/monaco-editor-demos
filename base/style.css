@@ -1,0 +1,39 @@
+body {
+  font-family: "Source Han Sans", "San Francisco", "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+  transition: background-color .2s;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  right: 0;
+  
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  
+  line-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 15px;
+
+  overflow: hidden;
+  z-index: 0;
+}
+
+.container {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  right: 0;
+
+  margin: 0 auto;
+  display: block;
+
+  transition: 0.2s;
+  overflow: hidden;
+  z-index: 0;
+}
