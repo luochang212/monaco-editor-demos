@@ -15,7 +15,7 @@ require(['vs/editor/editor.main'], function () {
         base: 'vs',
         inherit: true,
         rules: [{ background: 'EDF9FA' }],
-        colors: { 'editor.lineHighlightBackground': '#0000FF20' }
+        // colors: { 'editor.lineHighlightBackground': '#0000FF20' }
     });
     monaco.editor.setTheme('myTheme');
 
@@ -30,15 +30,15 @@ require(['vs/editor/editor.main'], function () {
     }
 
     // 新建一个 div
-    function addNewEditor(code) {
+    function addNewEditor(code, language) {
         var new_container = document.createElement("DIV");
         new_container.id = "container-" + fileCounter.toString(10);
         new_container.className = "container";
         document.getElementById("root").appendChild(new_container);
-        newEditor(new_container.id, code, 'javascript');
+        newEditor(new_container.id, code, language);
         fileCounter += 1;
     }
 
-    addNewEditor(defaultCode);
+    addNewEditor(defaultCode, 'javascript');
 
 });
